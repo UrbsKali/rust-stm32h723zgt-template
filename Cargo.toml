@@ -10,3 +10,4 @@ cortex-m-rt = "0.7.3"
 panic-halt = "0.2.0"
 cortex-m = { version = "^0.7.7", features = ["critical-section-single-core"] }
 rtt-target = "0.5.0"
+stm32h7xx-hal = { version = "^0.16.0", features = ["stm32h735"]}

@@ -6,10 +6,13 @@ use cortex_m_rt::entry;
 use panic_halt as _;
 use rtt_target::{rprintln, rtt_init_print};
 
+use stm32h7xx_hal as hal;
+
 #[entry]
 fn main() -> ! {
     rtt_init_print!();
     rprintln!("Hello, world!");
+
     loop {
         nop();
         // your code goes here
